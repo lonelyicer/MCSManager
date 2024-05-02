@@ -28,6 +28,7 @@ export enum QUICKSTART_ACTION_TYPE {
   Bedrock = "Bedrock",
   Terraria = "Terraria",
   SteamGameServer = "SteamGameServer",
+  SquadGame = "SquadGame",
   Docker = "Docker",
   AnyApp = "AnyApp"
 }
@@ -71,10 +72,17 @@ export function useQuickStartFlow() {
     },
 
     {
+      title: t("TXT_CODE_5b475253"),
+      key: QUICKSTART_ACTION_TYPE.SquadGame,
+      icon: AppstoreAddOutlined
+    },
+
+    {
       title: t("TXT_CODE_dd8d27ce"),
       key: QUICKSTART_ACTION_TYPE.SteamGameServer,
       icon: ShoppingCartOutlined
     },
+
     {
       title: t("TXT_CODE_e08e63b5"),
       key: QUICKSTART_ACTION_TYPE.AnyApp,

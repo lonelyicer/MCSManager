@@ -23,6 +23,7 @@ export const TYPE_MINECRAFT_BDS = "minecraft/bedrock/bds";
 export const TYPE_MINECRAFT_NUKKIT = "minecraft/bedrock/nukkit";
 export const TYPE_STEAM_SERVER_UNIVERSAL = "steam/universal";
 export const TYPE_TERRARIA = "steam/terraria";
+export const TYPE_SQUADGAME = "steam/squad"
 
 export const INSTANCE_TYPE_TRANSLATION: MapData<string> = {
   [TYPE_UNIVERSAL]: t("TXT_CODE_a92a4aa1"),
@@ -41,7 +42,8 @@ export const INSTANCE_TYPE_TRANSLATION: MapData<string> = {
   [TYPE_MINECRAFT_GEYSER]: t("TXT_CODE_4f57868"),
   [TYPE_MINECRAFT_MCDR]: t("TXT_CODE_fa6f95a1"),
   [TYPE_WEB_SHELL]: t("TXT_CODE_31c5a4d0"),
-  [TYPE_TERRARIA]: t("TXT_CODE_f25df30a")
+  [TYPE_TERRARIA]: t("TXT_CODE_f25df30a"),
+  [TYPE_SQUADGAME]: t("TXT_CODE_5b475253")
 };
 
 interface Params {
@@ -306,5 +308,13 @@ export const INSTANCE_CONFIGS: InstanceConfigs[] = [
     path: "tshock/config.json",
     redirect: "tshock/config.json",
     category: [TYPE_TERRARIA]
+  },
+  {
+    fileName: "[Squad] Server.cfg",
+    type: "cfg",
+    info: t("TXT_CODE_85dbfc94"),
+    path: "SquadGame/ServerConfig/Server.cfg",
+    redirect: "squad/server.cfg",
+    category: [TYPE_SQUADGAME]
   }
 ];

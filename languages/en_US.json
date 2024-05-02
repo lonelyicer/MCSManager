@@ -1872,6 +1872,7 @@
   "TXT_CODE_fa6f95a1": "MC MCDR",
   "TXT_CODE_31c5a4d0": "Web Shell",
   "TXT_CODE_f25df30a": "Terraria",
+  "TXT_CODE_5b475253": "Squad",
   "TXT_CODE_693f31d6": "Path Prefix",
   "TXT_CODE_3e93e31e": "Used when reusing ports. In most cases, no configuration is required here",
   "TXT_CODE_1c2efd38": "The network connection cannot be established with the remote node. Please check whether the remote node is running normally? \nIs the network configured correctly?",
@@ -1893,5 +1894,6 @@
   "TXT_CODE_94f1ba3": "After selecting this template, all data of this instance will be deleted. Please compress and download the file backup in file management first. Do you want to continue?",
   "TXT_CODE_a5f01916": "Allow Instance Reset",
   "TXT_CODE_b5a47731": "The administrator has restricted general users from using the instance reinstallation function.",
-  "TXT_CODE_f5f9664": "This feature allows general users to use the default packages in \"Quick Deployment\" to reinstall instances."
+  "TXT_CODE_f5f9664": "This feature allows general users to use the default packages in \"Quick Deployment\" to reinstall instances.",
+  "TXT_CODE_85dbfc94": "Server Basic Settings"
 }

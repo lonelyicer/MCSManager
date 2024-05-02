@@ -12,7 +12,8 @@ import {
   TYPE_MINECRAFT_BEDROCK,
   TYPE_STEAM_SERVER_UNIVERSAL,
   TYPE_UNIVERSAL,
-  TYPE_TERRARIA
+  TYPE_TERRARIA,
+TYPE_SQUADGAME
 } from "@/hooks/useInstance";
 import SelectUnzipCode from "../instance/dialogs/SelectUnzipCode.vue";
 import {
@@ -99,6 +100,13 @@ if (props.appType === QUICKSTART_ACTION_TYPE.SteamGameServer) {
   formData.startCommand = isFileMode ? "${ProgramName}" : "";
   formData.type = TYPE_STEAM_SERVER_UNIVERSAL;
 }
+
+if (props.appType === QUICKSTART_ACTION_TYPE.SquadGame) {
+  formData.startCommand = isFileMode ? "${ProgramName} -log" : "";
+  formData.stopCommand = "^c";
+  formData.type = TYPE_SQUADGAME;
+}
+
 
 const rules: Record<string, Rule[]> = {
   nickname: [{ required: true, message: t("TXT_CODE_68a504b3") }]

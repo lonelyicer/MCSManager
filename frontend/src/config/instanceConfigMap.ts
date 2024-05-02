@@ -1151,5 +1151,39 @@ export const configData: {
         ApplicationRestTokens: t("TXT_CODE_f0ca2761")
       }
     }
+  },
+  "squad/server.cfg": {
+    desc: t("TXT_CODE_85dbfc94"),
+    config: {
+      "ServerName": t("TXT_CODE_985dadd1"),
+      "ShouldAdvertise": t("TXT_CODE_27c14855"),
+      "IsLANMatch": t("TXT_CODE_ba1a9189"),
+      "MaxPlayers": t("TXT_CODE_78ae4e1a"),
+      "NumReservedSlots": t("TXT_CODE_9eaa3199"),
+      "PublicQueueLimit": t("TXT_CODE_8902a760"),
+      "JoiningPlayerTimeout": t("TXT_CODE_fbd20361"),
+      "Tags": t("TXT_CODE_bffd706f"),
+      "Rules": t("TXT_CODE_bff7713e"),
+      "MapRotationMode": t("XT_CODE_2c385bce"),
+      "RandomizeAtStart": t("TXT_CODE_fb9cb633"),
+      "UseVoteFactions": t("TXT_CODE_88be314c"),
+      "UseVoteLevel": t("TXT_CODE_7db3b5e2"),
+      "UseVoteLayer": t("TXT_CODE_1157e40d"),
+      "AllowTeamChanges": t("TXT_CODE_877e7a7d"),
+      "PreventTeamChangeIfUnbalanced": t("TXT_CODE_866f0c66"),
+      "NumPlayersDiffForTeamChanges": t("TXT_CODE_fe59524d"),
+      "RejoinSquadDelayAfterKick": t("TXT_CODE_aa1edb0d"),
+      "RecordDemos": t("TXT_CODE_e6304cbe"),
+      "AllowPublicClientsToRecord": t("TXT_CODE_5b56a4f4"),
+      "ServerMessageInterval": t("TXT_CODE_d63fe0bf"),
+      "TKAutoKickEnabled": t("TXT_CODE_f9c8e2ac"),
+      "AutoTKBanNumberTKs": t("TXT_CODE_b7b60961"),
+      "AutoTKBanTime": t("TXT_CODE_bdf86b79"),
+      "VehicleKitRequirementDisabled": t("TXT_CODE_544c7546"),
+      "AllowCommunityAdminAccess": t("TXT_CODE_e243c218"),
+      "AllowDevProfiling": t("TXT_CODE_8f6fddd9"),
+      "AllowQA": t("TXT_CODE_90d0e04f"),
+      "VehicleClaimingDisabled": t("TXT_CODE_f6912818")
+    }
   }
 };

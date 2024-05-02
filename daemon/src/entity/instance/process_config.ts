@@ -40,6 +40,9 @@ export class ProcessConfig {
     if (this.iProcessConfig.type === "txt") {
       return text;
     }
+    if (this.iProcessConfig.type === "cfg") {
+      return properties.parse(text.replace(/\/\//gim, "#"));
+    }
   }
 
   // Automatically save to the local configuration file according to the parameter object
@@ -65,6 +68,12 @@ export class ProcessConfig {
     }
     if (this.iProcessConfig.type === "txt") {
       text = object.toString();
+    }
+    if (this.iProcessConfig.type === "cfg") {
+      text = properties.stringify(object, {
+        unicode: true
+      });
+      text = text.replace(/ = /gim, "=");
     }
     if (!text && this.iProcessConfig.type !== "txt")
       throw new Error($t("TXT_CODE_process_config.writEmpty"));
